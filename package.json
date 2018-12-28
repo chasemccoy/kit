@@ -1,0 +1,29 @@
+{
+  "name": "@chasemccoy/kit",
+  "version": "0.1.0",
+  "description": "React component library and development kit. ",
+  "main": "dist/index.umd.js",
+  "module": "dist/index.esm.js",
+  "repository": "chasemccoy/kit",
+  "author": "Chase McCoy <chasem000@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "build": "NODE_ENV=production rollup -c"
+  },
+  "dependencies": {
+    "styled-components": "^4.1.3",
+    "styled-system": "^3.1.11"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/preset-react": "^7.0.0",
+    "rollup": "^1.0.0",
+    "rollup-plugin-babel": "^4.1.0",
+    "rollup-plugin-commonjs": "^9.2.0",
+    "rollup-plugin-node-resolve": "^4.0.0"
+  },
+  "peerDependencies": {
+    "react": "^16.7.0"
+  }
+}
