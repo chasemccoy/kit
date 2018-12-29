@@ -1,9 +1,24 @@
 import babel from 'rollup-plugin-babel'
 import commonjs from 'rollup-plugin-commonjs'
 import resolve from 'rollup-plugin-node-resolve'
+import alias from 'rollup-plugin-alias'
+import { eslint } from 'rollup-plugin-eslint'
+import replace from 'rollup-plugin-replace'
 
 const formats = ['esm', 'umd']
-const plugins = [resolve(), babel({exclude: 'node_modules/**'}), commonjs()]
+const plugins = [
+  eslint(),
+  resolve(), 
+  babel({exclude: 'node_modules/**'}), 
+  commonjs(), 
+  alias({
+    components: './components'
+  }),
+  replace({
+    exclude: 'node_modules/**',
+    ENV: JSON.stringify(process.env.NODE_ENV || 'development'),
+  })
+]
 
 export default [
   {
@@ -14,9 +29,10 @@ export default [
       format,
       name: 'kit',
       globals: {
-        react: 'React'
+        react: 'React',
+        'styled-components': 'styed-components'
       }
     })),
-    external: ['react']
+    external: ['react', 'styled-components']
   }
 ]
