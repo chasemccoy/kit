@@ -5,7 +5,7 @@
 Install the kit and its peer dependencies (if necessary) in your project:
 
 ```
-yarn add @chasemccoy/kit styled-components react
+yarn add @chasemccoy/kit react styled-components
 ```
 
 ### Local Development
