@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { width, height, color, space, boxShadow, borderRadius, display, justifyContent, alignItems, flexWrap, flex, flexDirection, minWidth, minHeight, maxWidth } from 'styled-system' 
+import { width, height, color, space, boxShadow, borderRadius, display, justifyContent, alignItems, flexWrap, flex, flexDirection, minWidth, minHeight, maxWidth, flexBasis } from 'styled-system' 
 
 const Box = styled.div`
   ${space}
@@ -17,6 +17,7 @@ const Box = styled.div`
   ${minWidth}
   ${maxWidth}
   ${color}
+  ${flexBasis}
 `
 
 export default Box
