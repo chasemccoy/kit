@@ -14,6 +14,7 @@ const plugins = [
   resolve(), 
   babel({exclude: 'node_modules/**'}), 
   alias({
+    resolve: ['/index.js'],
     components: path.resolve(__dirname, 'src', 'components'),
     utils: path.resolve(__dirname, 'src', 'utils')
   }),
