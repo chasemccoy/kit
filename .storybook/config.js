@@ -1,6 +1,7 @@
 import React from 'react'
 import { ThemeProvider } from 'styled-components'
 import { configure, addDecorator } from '@storybook/react'
+import CSSReset from 'components/CSSReset'
 
 const req = require.context('../src/components', true, /\.stories\.js$/)
 
@@ -28,7 +29,10 @@ const theme = {
 
 addDecorator(story => (
   <ThemeProvider theme={theme}>
-    {story()}
+    <React.Fragment>
+      <CSSReset />
+      {story()}
+    </React.Fragment>
   </ThemeProvider>
 ))
 
