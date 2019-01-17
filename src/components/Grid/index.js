@@ -30,4 +30,6 @@ const Grid = ({ gutter, ...props }) => (
   />
 )
 
+Grid.displayName = 'Grid'
+
 export default Grid

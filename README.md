@@ -15,3 +15,9 @@ yarn add @chasemccoy/kit react styled-components
 1. Clone this repo: `git clone https://github.com/chasemccoy/kit`
 2. Install dependencies: `yarn`
 3. Run the dev server: `yarn start`
+
+### Storybook
+
+You can run Storybook locally to build/test/document components:
+
+`yarn storybook`

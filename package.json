@@ -25,6 +25,8 @@
     "@babel/core": "^7.2.2",
     "@babel/preset-env": "^7.2.3",
     "@babel/preset-react": "^7.0.0",
+    "@storybook/addon-info": "^4.1.6",
+    "@storybook/addon-options": "^4.1.6",
     "@storybook/react": "^4.1.6",
     "babel-loader": "^8.0.5",
     "eslint-plugin-jsx-a11y": "^6.1.2",

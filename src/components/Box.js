@@ -20,4 +20,6 @@ const Box = styled.div`
   ${flexBasis}
 `
 
+Box.displayName = 'Box'
+
 export default Box

@@ -41,4 +41,8 @@ const Text = styled.div`
 Text.p = Text.withComponent('p')
 Text.span = Text.withComponent('span')
 
+Text.displayName = 'Text'
+Text.p.displayName = 'Text.p'
+Text.span.displayName = 'Text.span'
+
 export default Text
