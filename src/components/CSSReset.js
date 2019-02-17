@@ -99,6 +99,20 @@ const CSSReset = createGlobalStyle`
     content: none;
   }
 
+  img, video, canvas, audio, iframe, embed, object  { 
+    display: block;
+    vertical-align: middle;
+  }
+
+  img, video {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  img {
+    border-style: none;
+  }
+
   /* Attributes & states
   * *********************************** */
   [hidden] {
