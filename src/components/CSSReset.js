@@ -35,8 +35,7 @@ const CSSReset = createGlobalStyle`
   }
 
   body {
-    font-size: 1.6rem;
-    line-height: 1.4;
+    line-height: 1.5;
   }
 
   * {

@@ -13,7 +13,8 @@
     "build": "NODE_ENV=production rollup -c",
     "prepublishOnly": "yarn run build",
     "storybook": "start-storybook -p 9001 -c .storybook",
-    "build-storybook": "build-storybook -c .storybook"
+    "build-storybook": "build-storybook -c .storybook",
+    "release": "np"
   },
   "files": [
     "dist"
@@ -31,6 +32,7 @@
     "babel-loader": "^8.0.5",
     "eslint-plugin-jsx-a11y": "^6.1.2",
     "eslint-plugin-react": "^7.12.0",
+    "np": "^4.0.2",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
     "rollup": "^1.0.0",
