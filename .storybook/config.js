@@ -25,6 +25,7 @@ const theme = {
 
 const GlobalCSS = createGlobalStyle`
   body {
+    font-size: 18px;
     font-family: ${defaultTheme.fonts.system};
   }
 `
