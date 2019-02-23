@@ -77,15 +77,6 @@ const CSSReset = createGlobalStyle`
     list-style: none;
   }
 
-  img,
-  video {
-    max-width: 100%;
-  }
-
-  img {
-    border-style: none;
-  }
-
   blockquote,
   q {
     quotes: none;
@@ -99,18 +90,18 @@ const CSSReset = createGlobalStyle`
     content: none;
   }
 
-  img, video, canvas, audio, iframe, embed, object  { 
-    display: block;
-    vertical-align: middle;
+  img {
+    border-style: none;
   }
 
   img, video {
     max-width: 100%;
     height: auto;
   }
-  
-  img {
-    border-style: none;
+
+  img, video, canvas, audio, iframe, embed, object  { 
+    display: block;
+    vertical-align: middle;
   }
 
   /* Attributes & states

@@ -1,18 +1,18 @@
-import {styles as s, compose} from 'styled-system'
+import * as s from 'styled-system'
 
-export const COMMON = compose(
+export const COMMON = s.compose(
   s.color,
   s.space 
 )
 
-export const BORDER = compose(
+export const BORDER = s.compose(
   s.borders,
   s.borderColor,
   s.boxShadow,
   s.borderRadius
 )
 
-export const TYPOGRAPHY = compose(
+export const TYPOGRAPHY = s.compose(
   s.fontFamily,
   s.fontSize,
   s.fontWeight,
@@ -20,7 +20,7 @@ export const TYPOGRAPHY = compose(
   s.textAlign
 )
 
-export const LAYOUT = compose(
+export const LAYOUT = s.compose(
   s.display,
   s.size,
   s.width,
@@ -33,7 +33,7 @@ export const LAYOUT = compose(
   s.verticalAlign
 )
 
-export const POSITION = compose(
+export const POSITION = s.compose(
   s.position,
   s.zIndex,
   s.top,
@@ -42,7 +42,7 @@ export const POSITION = compose(
   s.left
 )
 
-export const FLEX_CONTAINER = compose(
+export const FLEX_CONTAINER = s.compose(
   s.flexBasis,
   s.flexDirection,
   s.flexWrap,
@@ -53,7 +53,7 @@ export const FLEX_CONTAINER = compose(
   s.order
 )
 
-export const FLEX_ITEM = compose(
+export const FLEX_ITEM = s.compose(
   s.flex,
   s.justifySelf,
   s.alignSelf

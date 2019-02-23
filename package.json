@@ -14,13 +14,13 @@
     "prepublishOnly": "yarn run build",
     "storybook": "start-storybook -p 9001 -c .storybook",
     "build-storybook": "build-storybook -c .storybook",
-    "release": "np"
+    "release": "np --no-cleanup"
   },
   "files": [
     "dist"
   ],
   "dependencies": {
-    "styled-system": "^3.1.11"
+    "styled-system": "^4.0.0"
   },
   "devDependencies": {
     "@babel/core": "^7.2.2",
