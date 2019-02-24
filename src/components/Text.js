@@ -1,33 +1,8 @@
+import React from 'react'
 import styled, { css } from 'styled-components'
-import {
-  space,
-  color,
-  fontSize,
-  fontWeight,
-  lineHeight,
-  fontFamily,
-  maxWidth,
-  borders,
-  borderColor,
-  textAlign,
-  width,
-  display
-} from 'styled-system'
+import { COMMON, TYPOGRAPHY, BORDER, LAYOUT } from '../utils/style-props'
 
 const Text = styled.div`
-  ${space}
-  ${color}
-  ${fontSize}
-  ${fontWeight}
-  ${fontFamily}
-  ${lineHeight}
-  ${borders}
-  ${borderColor}
-  ${textAlign}
-  ${width}
-  ${maxWidth}
-  ${display}
-
   ${p => p.uppercase && css`
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -36,12 +11,16 @@ const Text = styled.div`
   ${p => p.italic && css`
     font-style: italic;
   `}
+
+  ${COMMON}
+  ${TYPOGRAPHY}
+  ${BORDER}
+  ${LAYOUT}
 `
 
-Text.p = Text.withComponent('p')
-Text.span = Text.withComponent('span')
+Text.p = props => <Text as='p' {...props} />
+Text.span = props => <Text as='span' {...props} />
 
-Text.displayName = 'Text'
 Text.p.displayName = 'Text.p'
 Text.span.displayName = 'Text.span'
 

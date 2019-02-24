@@ -1,5 +1,6 @@
+import React from 'react'
 import styled, { css } from 'styled-components'
-import { space, display, borders, borderColor } from 'styled-system'
+import { COMMON, BORDER, LAYOUT } from '../utils/style-props'
 
 export const UnorderedList = styled.ul`
   ${props => props.inline && css`
@@ -32,8 +33,10 @@ export const UnorderedList = styled.ul`
     }
   `}
 
-  ${space}
-  ${display}
-  ${borders}
-  ${borderColor}
+  ${COMMON}
+  ${BORDER}
+  ${LAYOUT}
 `
+
+export const OrderedList = props => <UnorderedList as='ol' {...props} />
+

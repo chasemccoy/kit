@@ -1,25 +1,12 @@
 import styled from 'styled-components'
-import { width, height, color, space, boxShadow, borderRadius, display, justifyContent, alignItems, flexWrap, flex, flexDirection, minWidth, minHeight, maxWidth, flexBasis } from 'styled-system' 
+import { COMMON, BORDER, LAYOUT, FLEX_CONTAINER, FLEX_ITEM } from '../utils/style-props'
 
 const Box = styled.div`
-  ${space}
-  ${width}
-  ${height}
-  ${boxShadow}
-  ${borderRadius}
-  ${display}
-  ${justifyContent}
-  ${alignItems}
-  ${flexWrap}
-  ${flex}
-  ${flexDirection}
-  ${minHeight}
-  ${minWidth}
-  ${maxWidth}
-  ${color}
-  ${flexBasis}
+  ${COMMON}
+  ${BORDER}
+  ${LAYOUT}
+  ${FLEX_CONTAINER}
+  ${FLEX_ITEM}
 `
-
-Box.displayName = 'Box'
 
 export default Box

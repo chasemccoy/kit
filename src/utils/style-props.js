@@ -3,7 +3,7 @@ import * as s from 'styled-system'
 export const COMMON = s.compose(
   s.color,
   s.space 
-)
+) 
 
 export const BORDER = s.compose(
   s.borders,
