@@ -9,4 +9,6 @@ const Box = styled.div`
   ${FLEX_ITEM}
 `
 
+Box.displayName = 'Box'
+
 export default Box

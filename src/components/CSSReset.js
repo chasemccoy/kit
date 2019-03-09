@@ -72,11 +72,6 @@ const CSSReset = createGlobalStyle`
     border-spacing: 0;
   }
 
-  ol,
-  ul {
-    list-style: none;
-  }
-
   blockquote,
   q {
     quotes: none;

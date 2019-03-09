@@ -20,21 +20,21 @@
     "dist"
   ],
   "dependencies": {
-    "styled-system": "^4.0.0"
+    "styled-system": "^4.0.1"
   },
   "devDependencies": {
     "@babel/core": "^7.2.2",
     "@babel/preset-env": "^7.2.3",
     "@babel/preset-react": "^7.0.0",
-    "@storybook/addon-info": "^4.1.6",
-    "@storybook/addon-options": "^4.1.6",
-    "@storybook/react": "^4.1.6",
+    "@storybook/addon-info": "^5.0.0",
+    "@storybook/react": "^5.0.0",
+    "@storybook/theming": "^5.0.0",
     "babel-loader": "^8.0.5",
     "eslint-plugin-jsx-a11y": "^6.1.2",
     "eslint-plugin-react": "^7.12.0",
     "np": "^4.0.2",
-    "react": "^16.7.0",
-    "react-dom": "^16.7.0",
+    "react": "^16.8.4",
+    "react-dom": "^16.8.4",
     "rollup": "^1.0.0",
     "rollup-plugin-alias": "^1.5.1",
     "rollup-plugin-babel": "^4.1.0",

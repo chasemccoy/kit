@@ -21,6 +21,7 @@ const Text = styled.div`
 Text.p = props => <Text as='p' {...props} />
 Text.span = props => <Text as='span' {...props} />
 
+Text.displayName = 'Text'
 Text.p.displayName = 'Text.p'
 Text.span.displayName = 'Text.span'
 

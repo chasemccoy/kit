@@ -1,8 +1,8 @@
 import React from 'react'
 import { ThemeProvider, createGlobalStyle } from 'styled-components'
-import { configure, addDecorator } from '@storybook/react'
+import { configure, addDecorator, addParameters } from '@storybook/react'
+import { create } from '@storybook/theming';
 import { withInfo } from '@storybook/addon-info'
-import { withOptions } from '@storybook/addon-options'
 import CSSReset from 'components/CSSReset'
 import Box from 'components/Box'
 import Grid from 'components/Grid'
@@ -51,13 +51,17 @@ addDecorator(story => (
   </ThemeProvider>
 ))
 
-addDecorator(
-  withOptions({
-    name: '@chasemccoy/kit',
-    url: 'https://github.com/chasemccoy/kit',
-    showAddonPanel: false,
+addParameters({
+  options: {
+    theme: create({
+      base: 'light',
+      brandTitle: '@chasemccoy/kit',
+      brandUrl: 'https://github.com/chasemccoy/kit',
+      // brandImage: 'http://url.of/some.svg'
+    }),
+    showPanel: false,
     sidebarAnimations: false
-  })
-)
+  },
+});
 
 configure(loadStories, module)
