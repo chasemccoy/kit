@@ -32,6 +32,7 @@ const CSSReset = createGlobalStyle`
   * *********************************** */
   html {
     font-size: 62.5%;
+    -webkit-text-size-adjust: 100%;
   }
 
   body {
@@ -67,9 +68,12 @@ const CSSReset = createGlobalStyle`
 
   /* Elements
   * *********************************** */
-  table {
-    border-collapse: collapse;
-    border-spacing: 0;
+  abbr[title] {
+    text-decoration: underline;
+    text-decoration: underline dotted;
+    cursor: help;
+    border-bottom: 0;
+    text-decoration-skip-ink: none;
   }
 
   blockquote,
@@ -97,6 +101,22 @@ const CSSReset = createGlobalStyle`
   img, video, canvas, audio, iframe, embed, object  { 
     display: block;
     vertical-align: middle;
+  }
+
+  summary {
+    display: list-item;
+    cursor: pointer;
+  }
+
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+
+ /* Forms
+  * *********************************** */
+  [type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
   }
 
   /* Attributes & states
