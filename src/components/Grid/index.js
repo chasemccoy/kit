@@ -24,6 +24,7 @@ const Container = styled(Box)`
 
 const Grid = ({ gutter, ...props }) => (
   <Container
+    gutter={gutter}
     mx={gutter ? `-${gutter}px` : ['-8px', '-12px']}
     mt={gutter ? `-${gutter * 2}px` : ['-16px', '-24px']}
     {...props}
