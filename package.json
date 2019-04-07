@@ -12,23 +12,18 @@
     "start": "rollup -c -w",
     "build": "NODE_ENV=production rollup -c",
     "prepublishOnly": "yarn run build",
-    "storybook": "start-storybook -p 9001 -c .storybook",
-    "build-storybook": "build-storybook -c .storybook",
     "release": "np --no-cleanup"
   },
   "files": [
     "dist"
   ],
   "dependencies": {
-    "styled-system": "^4.0.1"
+    "styled-system": "^4.1.0"
   },
   "devDependencies": {
     "@babel/core": "^7.2.2",
     "@babel/preset-env": "^7.2.3",
     "@babel/preset-react": "^7.0.0",
-    "@storybook/addon-info": "^5.0.0",
-    "@storybook/react": "^5.0.0",
-    "@storybook/theming": "^5.0.0",
     "babel-loader": "^8.0.5",
     "eslint-plugin-jsx-a11y": "^6.1.2",
     "eslint-plugin-react": "^7.12.0",
