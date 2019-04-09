@@ -2950,10 +2950,10 @@ rollup-plugin-commonjs@9.2.0:
     resolve "^1.8.1"
     rollup-pluginutils "^2.3.3"
 
-rollup-plugin-eslint@5.0.0:
-  version "5.0.0"
-  resolved "https://registry.yarnpkg.com/rollup-plugin-eslint/-/rollup-plugin-eslint-5.0.0.tgz#18f6d51f2bfdf550c0a17df8a486058fa20e3170"
-  integrity sha512-9WZKT2Ie3F4A/nWfkBQiq2J4g43jyurmYPAUAxdIRHDgIOPU7KgSER4icFne6ALY8vROPNKEDNAt8Z1eYV9oZw==
+rollup-plugin-eslint@5.1.0:
+  version "5.1.0"
+  resolved "https://registry.yarnpkg.com/rollup-plugin-eslint/-/rollup-plugin-eslint-5.1.0.tgz#9acc575f9b162b160c18a7e59082303273ca0b10"
+  integrity sha512-jmjqDC42HQsevgBuGQuDb9xhkei4IRkwufAbd6pe5Cbd969p/CjO3SPIwVeINSxXrzrGh9VG72EKtYVFwybxpQ==
   dependencies:
     eslint "^5.1.0"
     rollup-pluginutils "^2.3.0"
