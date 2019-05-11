@@ -25,6 +25,4 @@ Button.defaultProps = {
   color: 'accent'
 }
 
-Button.displayName = 'Button'
-
 export default Button
