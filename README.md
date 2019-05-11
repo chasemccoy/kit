@@ -8,7 +8,7 @@ Install the kit and its peer dependencies (if necessary) in your project:
 yarn add @chasemccoy/kit react styled-components
 ```
 
-Make sure you have a `ThemeProvider` in your tree that's providing a theme object like `styled-system` expects. 
+Make sure you have a `ThemeProvider` in your tree that's providing a theme object like [`styled-system`](https://styled-system.com) expects. 
 
 ### Local Development
 
