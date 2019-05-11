@@ -1268,7 +1268,7 @@
     pretty-hrtime "^1.0.3"
     regenerator-runtime "^0.12.1"
 
-"@storybook/react@^5.0.11":
+"@storybook/react@5.0.11":
   version "5.0.11"
   resolved "https://registry.yarnpkg.com/@storybook/react/-/react-5.0.11.tgz#e131437a59d1f2fac7fbad4ab0c28a54d8a96398"
   integrity sha512-HOKtOvGAOpwZyKXEEjNg3Exhf1E946H+Wcmfgp3hD7BOdxiWbXvkE3kwdBHb+cnQri0rJaADnYiXB/p8MkxfzQ==
@@ -1306,7 +1306,7 @@
     memoizerific "^1.11.3"
     qs "^6.5.2"
 
-"@storybook/theming@5.0.11", "@storybook/theming@^5.0.11":
+"@storybook/theming@5.0.11":
   version "5.0.11"
   resolved "https://registry.yarnpkg.com/@storybook/theming/-/theming-5.0.11.tgz#46e243c36324676c36393c01695bdbd6369e79b4"
   integrity sha512-zZoMFirkdGYd4M6HupNYn713GesA/kx0nbhPfyatwnwRV9/LrG7KwkMjVDMrSHRdZei7z1KF7yFhleAOKb8RaQ==
