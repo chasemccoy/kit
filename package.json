@@ -9,9 +9,12 @@
   "license": "MIT",
   "private": false,
   "scripts": {
-    "start": "rollup -c -w",
+    "start": "yarn run watch-package & yarn run storybook",
+    "watch-package": "rollup -c -w",
     "build": "NODE_ENV=production rollup -c",
     "prepublishOnly": "yarn run build",
+    "storybook": "start-storybook -p 9001 -c .storybook",
+    "build-storybook": "yarn run build && build-storybook -c .storybook",
     "release": "np --no-cleanup"
   },
   "files": [
@@ -24,6 +27,8 @@
     "@babel/core": "7.4.4",
     "@babel/preset-env": "7.4.4",
     "@babel/preset-react": "7.0.0",
+    "@storybook/react": "^5.0.11",
+    "@storybook/theming": "^5.0.11",
     "babel-loader": "8.0.5",
     "eslint-plugin-jsx-a11y": "6.2.1",
     "eslint-plugin-react": "7.13.0",
