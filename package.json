@@ -29,7 +29,7 @@
     "@babel/preset-react": "7.0.0",
     "@storybook/react": "5.0.11",
     "@storybook/theming": "5.0.11",
-    "babel-loader": "8.0.5",
+    "babel-loader": "8.0.6",
     "eslint-plugin-jsx-a11y": "6.2.1",
     "eslint-plugin-react": "7.13.0",
     "np": "5.0.1",
