@@ -3,7 +3,7 @@ import styled, { css } from 'styled-components'
 import Box from 'components/Box'
 import media from 'utils/media'
 
-const GUTTER =  24
+const GUTTER = 24
 const GUTTER_SMALL = 16
 
 const Container = styled(Box)`

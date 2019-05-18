@@ -35,3 +35,18 @@ storiesOf('Grid', module)
       <Contents />
     </Grid>
   ))
+  .add('Responsive', () => (
+    <Grid color='white'>
+      <Box width={[1, 1/2, 1, 1/2]}>
+        <Text.p bg='tomato' p={40}>First Box</Text.p>
+      </Box>
+
+      <Box width={[1, 1/2, 1, 1/2]}>
+        <Text.p bg='dodgerBlue' p={40}>Second Box</Text.p>
+      </Box>
+
+      <Box width={[1, 1/2, 1, 1/2]}>
+        <Text.p bg='tomato' p={40}>Third Box</Text.p>
+      </Box>
+    </Grid>
+  ))
