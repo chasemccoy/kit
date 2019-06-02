@@ -21,7 +21,7 @@
     "dist"
   ],
   "dependencies": {
-    "styled-system": "^4.1.0"
+    "styled-system": "^5.0.0"
   },
   "devDependencies": {
     "@babel/core": "7.4.5",
