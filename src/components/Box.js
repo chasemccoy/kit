@@ -1,10 +1,11 @@
 import styled from 'styled-components'
-import { COMMON, BORDER, LAYOUT, FLEX_CONTAINER, FLEX_ITEM } from '../utils/style-props'
+import { COMMON, BORDER, LAYOUT, POSITION, FLEX_CONTAINER, FLEX_ITEM } from '../utils/style-props'
 
 const Box = styled.div`
   ${COMMON}
   ${BORDER}
   ${LAYOUT}
+  ${POSITION}
   ${FLEX_CONTAINER}
   ${FLEX_ITEM}
 `

@@ -3,10 +3,12 @@ import { css } from 'styled-components'
 const isRequired = () => { throw new Error('Must provide breakpoints to `media` utility') }
 
 const media = (props = isRequired()) => {
-  const theme = props.hasOwnProperty('theme') ? props.theme : props
+  /* eslint-disable */
+  const theme = props.hasOwnProperty('theme') ? props.theme : props 
   const breakpoints = theme.hasOwnProperty('namedBreakpoints')
     ? theme.namedBreakpoints
     : theme
+  /* eslint-enable */
 
   return Object.keys(breakpoints).reduce((accumulator, label) => {
     accumulator[label] = (...args) => css`

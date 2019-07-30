@@ -30,9 +30,16 @@ const CSSReset = createGlobalStyle`
 
   /* Typography
   * *********************************** */
+
+  /**
+ * 1. Prevent certain mobile browsers from automatically zooming fonts.
+ * 2. Smooth scroll  
+ */
   html {
     font-size: 62.5%;
-    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%; /* 1 */
+    -webkit-text-size-adjust: 100%; /* 1 */
+    scroll-behavior: smooth; /* 2 */
   }
 
   body {
@@ -57,13 +64,8 @@ const CSSReset = createGlobalStyle`
     display: block;
   }
 
-  * {
+  *, ::before, ::after {
     box-sizing: border-box;
-  }
-
-  *:before,
-  *:after {
-    box-sizing: inherit;
   }
 
   /* Elements
@@ -87,6 +89,18 @@ const CSSReset = createGlobalStyle`
   q:before {
     content: "";
     content: none;
+  }
+
+  /**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ * 3. Render a 1px line by default
+ */
+  hr {
+    box-sizing: content-box; /* 1 */
+    height: 0; /* 1 */
+    overflow: visible; /* 2 */
+    border: .5px solid; /* 3 */
   }
 
   img {
@@ -125,12 +139,38 @@ const CSSReset = createGlobalStyle`
     display: none !important;
   }
 
+  :focus:not(:focus-visible) {
+    outline: none;
+  }
+
+  /* User interaction
+  * *********************************** */
+
+  /* Pointer cursor for buttons */
+  input[type="button"], button {
+    cursor: pointer;
+  }
+
   [disabled] {
     cursor: not-allowed;
   }
 
-  :focus:not(:focus-visible) {
-    outline: none;
+  /*
+  * 1. Remove the tapping delay in IE 10.
+  * 2. Remove the tapping delay on clickable elements
+  in all browsers.
+  */
+  a,
+  area,
+  button,
+  input,
+  label,
+  select,
+  summary,
+  textarea,
+  [tabindex] {
+    -ms-touch-action: manipulation; /* 1 */
+    touch-action: manipulation; /* 2 */
   }
 `
 

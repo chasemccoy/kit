@@ -24,7 +24,7 @@ const fontWeights = {
 }
 
 const fonts = {
-  system: `-apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif`,
+  system: `-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif`,
   mono: `Menlo, Monaco, OperatorMono-Book, Inconsolata, monospace`
 }
 

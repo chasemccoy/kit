@@ -6,10 +6,16 @@ export const COMMON = s.compose(
 ) 
 
 export const BORDER = s.compose(
-  s.borders,
+  s.border,
+  s.borderTop,
+  s.borderRight,
+  s.borderBottom,
+  s.borderLeft,
+  s.borderWidth,
+  s.borderStyle,
   s.borderColor,
-  s.boxShadow,
-  s.borderRadius
+  s.borderRadius,
+  s.boxShadow
 )
 
 export const TYPOGRAPHY = s.compose(
