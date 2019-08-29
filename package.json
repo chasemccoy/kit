@@ -1,6 +1,6 @@
 {
   "name": "@chasemccoy/kit",
-  "version": "0.7.0",
+  "version": "0.7.1",
   "description": "React component library and development kit. ",
   "main": "dist/index.js",
   "module": "dist/index.module.js",
@@ -50,6 +50,6 @@
     "styled-components": "^4.1.3"
   },
   "publishConfig": {
-    "registry":"https://npm.pkg.github.com/"
+    "registry": "https://npm.pkg.github.com/"
   }
 }
