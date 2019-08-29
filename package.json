@@ -1,6 +1,6 @@
 {
   "name": "@chasemccoy/kit",
-  "version": "0.7.1",
+  "version": "0.7.2",
   "description": "React component library and development kit. ",
   "main": "dist/index.js",
   "module": "dist/index.module.js",
