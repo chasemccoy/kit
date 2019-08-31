@@ -15,8 +15,10 @@ const plugins = [
   babel({exclude: 'node_modules/**'}), 
   alias({
     resolve: ['/index.js'],
-    components: path.resolve(__dirname, 'src', 'components'),
-    utils: path.resolve(__dirname, 'src', 'utils')
+    entries: [
+      {find: 'components', replacement: path.resolve(__dirname, 'src', 'components')},
+      {find: 'utils', replacement: path.resolve(__dirname, 'src', 'utils')}
+    ]
   }),
   replace({
     exclude: 'node_modules/**',
