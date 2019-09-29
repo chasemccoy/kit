@@ -5,10 +5,8 @@ import { create } from '@storybook/theming';
 import CSSReset from 'components/CSSReset'
 import defaultTheme from 'utils/theme'
 
-const req = require.context('../src/components', true, /\.stories\.js$/)
-
 function loadStories() {
-  req.keys().forEach(filename => req(filename))
+  return require.context('../src/components', true, /\.stories\.js$/)
 }
 
 const theme = {
@@ -25,12 +23,12 @@ const GlobalCSS = createGlobalStyle`
   }
 `
 
-addDecorator(story => (
+addDecorator(Story => (
   <ThemeProvider theme={theme}>
     <React.Fragment>
       <CSSReset />
       <GlobalCSS />
-      {story()}
+      <Story />
     </React.Fragment>
   </ThemeProvider>
 ))
@@ -47,4 +45,4 @@ addParameters({
   },
 });
 
-configure(loadStories, module)
+configure(loadStories(), module)

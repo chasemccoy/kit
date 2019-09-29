@@ -1,8 +1,12 @@
-import React from 'react'
-import { storiesOf } from '@storybook/react'
-import Button from 'components/Button'
+import React from 'react';
+import Button from 'components/Button';
 
-storiesOf('Button', module)
-  .add('with text', () => (
-      <Button onClick={() => alert('Clicked!')}>Hello Button</Button>
-  ))
+export default {
+  title: 'Button',
+};
+
+export const withText = () => <Button onClick={() => alert('Clicked!')}>Hello Button</Button>;
+
+withText.story = {
+  name: 'with text',
+};

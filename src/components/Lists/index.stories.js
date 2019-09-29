@@ -1,5 +1,4 @@
 import React from 'react'
-import { storiesOf } from '@storybook/react'
 import { UnorderedList, OrderedList } from 'components/Lists'
 
 const Contents = () => (
@@ -10,26 +9,46 @@ const Contents = () => (
   </React.Fragment>
 )
 
-storiesOf('List/Unordered', module)
-  .add('Default', () => (
+export default {
+  title: 'Lists',
+};
+
+export const unorderedDefault = () => (
     <UnorderedList px={40}>
       <Contents />
     </UnorderedList>
-  ))
-  .add('Inline', () => (
+  );
+
+unorderedDefault.story = {
+  name: 'Unordered/Default',
+};
+
+export const inline = () => (
     <UnorderedList inline>
       <Contents />
     </UnorderedList>
-  ))
-  .add('Unstyled', () => (
+  );
+
+inline.story = {
+  name: 'Unordered/Inline',
+};
+
+export const unstyled = () => (
     <UnorderedList unstyled>
       <Contents />
     </UnorderedList>
-  ))
+  );
 
-storiesOf('List/Ordered', module)
-  .add('Default', () => (
+unstyled.story = {
+  name: 'Unordered/Unstyled',
+};
+
+export const orderedDefault = () => (
     <OrderedList px={40}>
       <Contents />
     </OrderedList>
-  ))
+  );
+
+orderedDefault.story = {
+  name: 'Ordered/Default',
+};
