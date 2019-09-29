@@ -4,6 +4,7 @@ import SampleData from './sample-data';
 
 export default {
   title: 'CSS Reset',
+  component: CSSReset
 };
 
 export const sample = () => (

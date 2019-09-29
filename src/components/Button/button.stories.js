@@ -3,6 +3,7 @@ import Button from 'components/Button';
 
 export default {
   title: 'Button',
+  component: Button
 };
 
 export const withText = () => <Button onClick={() => alert('Clicked!')}>Hello Button</Button>;

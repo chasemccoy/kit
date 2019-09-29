@@ -6,7 +6,7 @@ import CSSReset from 'components/CSSReset'
 import defaultTheme from 'utils/theme'
 
 function loadStories() {
-  return require.context('../src/components', true, /\.stories\.js$/)
+  return require.context('../src/components', true, /\.stories\.(js|mdx)$/)
 }
 
 const theme = {

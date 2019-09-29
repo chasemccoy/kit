@@ -33,6 +33,7 @@ const Contents = () => (
 
 export default {
   title: 'Grid',
+  component: Grid
 };
 
 export const defaultStory = () => (
