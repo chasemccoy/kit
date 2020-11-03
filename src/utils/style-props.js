@@ -21,6 +21,7 @@ export const BORDER = s.compose(
 export const TYPOGRAPHY = s.compose(
   s.fontFamily,
   s.fontSize,
+  s.fontStyle,
   s.fontWeight,
   s.lineHeight,
   s.textAlign
