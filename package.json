@@ -15,7 +15,8 @@
     "prepublishOnly": "yarn run build",
     "storybook": "start-storybook -p 9001 -c .storybook",
     "build-storybook": "yarn run build && build-storybook -c .storybook",
-    "release": "np --no-cleanup"
+    "release": "np --no-cleanup",
+    "test": ""
   },
   "files": [
     "dist"
